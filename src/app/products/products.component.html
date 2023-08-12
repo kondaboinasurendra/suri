@@ -1,0 +1,55 @@
+<h1><u>Products</u></h1><br><br>
+<div  class="main">
+    <div *ngFor="let prod of products" class="product">
+        <img class="image" src="{{prod.image}}" alt="">
+     <div class="detalies">
+         <p class="data" id="title"><b>Title:</b>{{prod.title}}</p>
+        <p class="data" id="price"><b>Cost:</b>{{prod.price}}</p>
+        <p class="data" id="id"><b>Id:</b>{{prod.id}}</p>
+        <p class="data" id="category"><b>Category:</b>{{prod.category}}</p>
+        <p class="data"><b>Rating:</b><span  id="rate">{{prod.rating.rate}}*</span>
+        <span id="count">({{prod.rating.count}})</span></p>
+        <p class="data" id="desc"><b>Desc:</b>{{prod.description}}</p>
+
+        <button (click)="add(prod)" type="button" class="btn btn-primary">Add</button>
+    <button type="button" (click)="viewdetalies(prod)" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal">
+        Details
+      </button>
+        
+        
+     </div>
+      <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title " id="suri">{{suri?.title}}</h4>
+          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="babu">
+          <img  style="width:300px;height:200px;" src="{{suri?.image}}" alt="">
+          <p class="data text-center"><b>Title:</b>{{suri.title}}</p>
+    <p class="data text-center "><b>Id:</b>{{suri.id}}</p>
+    <p class="data text-center"><b>Cost:</b>{{suri.price}}</p>
+    <p class="data text-center"><b>Category:</b>{{suri.category}}</p>
+    
+    <p class="data text-center"><b>Desc:</b>{{suri.description}}</p>
+    </div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+     
+</div>

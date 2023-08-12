@@ -1,0 +1,42 @@
+ *{
+    margin:0;
+    padding: 0;
+ }
+header{
+    padding: 20px 10px;
+   background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+button{
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    margin-right: 50px;
+    padding: 13px;
+    background-color: red;
+    color: white;
+}
+
+    
+
+
+
+span{
+    padding: 10px;
+        font-size: 15px;
+}
+a{
+    padding: 30px;
+    color:white; 
+    text-decoration: none;
+    
+    
+}

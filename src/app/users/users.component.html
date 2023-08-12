@@ -1,0 +1,28 @@
+<p class="text-center">
+    Users</p><br>
+
+<div class="table table-bordered text-center" >
+    <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Phone</th>
+     <th>Email</th>
+     <th>UserName</th>
+     <th>Password</th>
+     <th>Address</th>
+     <th>Delete</th>
+</tr>
+     <tr *ngFor="let user of myUsers; let i=index;" class="text-center">
+        <td>{{user.id}}</td>
+        <td>{{user.name.firstname}} {{user.name.lastname}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.address.city}},{{user.address.geolocation.lat}},{{user.address.geolocation.long}},{{user.address.street}},{{user.address.number}},{{user.address.zipcode}}</td>
+         <td><button (click)="delete(i)" class="btn-danger">Delete </button></td>
+         <td><button (click)="update(i)" class="btn-success">Update</button></td>
+    </tr>
+    
+
+</div>

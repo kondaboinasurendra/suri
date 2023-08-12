@@ -1,0 +1,19 @@
+.image{
+    width:30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    border-radius: 40px;
+    left: -40px;
+    
+}
+.suri{
+    position: absolute;
+   background-color: green;
+   color: white;
+    top: 15px;
+    right:70px;
+    z-index: 1;
+    
+    border-radius: 20px;
+}

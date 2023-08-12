@@ -1,0 +1,52 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    
+}
+.about1{
+    flex: 50%;
+    text-align: justify;
+    margin-left: 150px;
+    padding: 50px;
+
+
+}
+.btn{
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+ 
+.more{
+    text-align: center;
+    font-size: 20px;
+     padding: 10px;
+}
+
+    
+
+.more p{
+    margin-left: 370px;
+    margin-right: 350px;
+    
+}
+.about1 p{
+      text-align: justify;
+      font-size: 16px;
+}
+.about2{
+    flex: 50%;
+    text-align: justify;
+    margin-right: 100px;
+    padding: 50px;
+}
+.button{
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,49 @@
+
+.home{
+        
+      background-size: cover;   
+       display: flex;
+       width: 100%;
+       margin-top: 100px;
+       }
+       
+.href{
+    
+    margin-top: 100px;
+    background-color: white;
+
+    
+}
+.href img{
+    padding: 5px;
+    
+    
+}
+.text{
+    text-align: center;
+    margin-top: 75px;
+    
+}
+.text h1{
+    
+    margin-right: 100px;
+    font-size: 60px;
+}
+.text p{
+    
+    font-size: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    
+    text-align: center;
+    
+}
+ button{
+   border-radius: 20px; 
+   width: 200px;
+   padding: 15px;
+   background-color: blue;
+   color: white;
+   text-align: center;
+   margin: 20px;
+}
